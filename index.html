@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Costos de Obra | Control de Gestión</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portal de consulta de costos mensuales e históricos para encargados de obra. Cuadrado al 100% con Softland ERP.">
+  <meta name="keywords" content="Softland ERP, costos de obra, control financiero, constructora, cencos">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Chart.js CDN (Para gráficos de tendencias e históricos) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  
+  <!-- SheetJS CDN (Para procesar reportes Excel de Softland ERP en cliente) -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" defer></script>
+  
+  <!-- Application Scripts -->
+  <script src="mockData.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  
+  <!-- Mount point for App UI -->
+  <div id="root">
+    <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; flex-direction: column; gap: 20px; font-family: sans-serif; background-color: #0a0f1d; color: #94a3b8;">
+      <div class="loader-spinner" style="border: 4px solid rgba(255,255,255,0.1); border-top: 4px solid #3b82f6; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+      <p style="font-weight: 500;">Cargando Portal de Costos de Obra...</p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+</body>
+</html>
